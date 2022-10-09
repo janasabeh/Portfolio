@@ -1,0 +1,255 @@
+/*
+colors:
+blue: #9ADCFF
+yellow: #FFF89A
+orange: #FFB2A6
+pink: #FF8AAE
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: block;
+    font-family: 'PT Serif', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: #FFF89A;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgb(177, 172, 172);
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    margin: 2em;
+}
+
+#navbar ul li{
+    margin: 3px 8px;
+    padding: 0px 3px;
+    font-size: 27px;
+    
+}
+
+#navbar ul li a{
+    color: black;
+    transition: 0.2s color ease-out;
+    text-shadow: 2px 2px 2px white;  
+}
+#navbar ul li a:hover{
+    color: #e2b3f3;
+    transition: 0.2s color ease-in;
+    
+}
+
+#welcome-div
+{
+    background-color: #FF8AAE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 50px;
+    line-height: 1.7em;
+    color: white;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+#welcome-section h1, #welcome-section i{
+    padding-left: 30px;
+}
+
+#welcome-section i
+{
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+}
+
+#welcome-div img{
+    border-radius: 50%;
+    padding-right: 20px;
+}
+
+#projects, #contact
+{
+    background-color: #e2b3f3;
+    text-align: center;
+    padding: 0 25px 100px ;
+    
+}
+
+#projects h2, #contact-header{
+    padding-top: 120px;
+    margin: 0 20px 60px 20px;
+    font-size: 60px;
+    color: white;
+    text-decoration: underline dotted;
+}
+
+#projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#projects-grid a{
+    background-color: #FFF89A;
+    border-radius: 10px;
+    box-shadow: 1px 1px #FF8AAE;
+    transform: translateY(0);
+    transition: 0.3s transform ease-out;
+}
+
+#projects-grid a figure{
+    height:calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects-grid a figure figcaption{
+    color: black;
+    font-size: 25px;
+    padding: 1rem 0.5rem;
+    text-shadow: 2px 2px 2px #e2b3f3;  
+}
+
+#projects-grid a figure figcaption span{
+    color:#FFF89A;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: none;
+}
+
+#projects-grid a:hover figure figcaption span{
+    color: #FF8AAE;
+    transition: 0.3s color ease-in;
+}
+
+#projects-grid a:hover {
+    transform: translateY(10%);
+    transition: 0.4s transform ease-in;
+}
+
+#show-all
+{
+    background-color: #FFF89A;
+    color:black;
+    font-size: 25px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.3s background-color, 0.3s color;
+}
+#show-all:hover
+{
+    background-color: #FF8AAE;
+    color:white;
+    transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out; 
+}
+
+#show-all i{
+    font-size: 17px;
+    transform: translateX(0);
+    transition: 0.4s transform ease-in;
+}
+
+#show-all:hover i{
+    transform: translateX(40%);
+    transition: 0.3s transform ease-in-out;
+}
+
+#contact{
+    height: 70vh;
+    background-color: #FF8AAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-header{
+    text-decoration: none;
+}
+
+#contact-header h2{
+    font-family: 'Pacifico', cursive;
+}
+
+#contact-header p{
+    font-size: 25px;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#socials a{
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px #1f1f1f;
+    transform: translateY(0);
+    transition: 0.3s transform ease-out;
+}
+
+#socials a:hover{
+    transform: translateY(10%);
+    transition: 0.3s transform ease-in;
+    color: #FFF89A;
+}
+
+footer{
+    background-color: #FF8AAE;
+    border-top: 5px solid #FFF89A;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#quote{
+    color: white;
+}
+
+@media (max-width: 1045px) {
+    #welcome-div{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
