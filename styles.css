@@ -250,6 +250,21 @@ footer{
 @media (max-width: 1045px) {
     #welcome-div{
         flex-direction: column;
-        justify-content: center;
+        justify-content:center;
+        align-items: flex-start;
+    }
+}
+
+@media (max-height: 600px) and (max-width: 1045px)
+{
+    #welcome-div img{
+        display: none;
+    }
+    
+    #welcome-div{
+        background-image: url("images/jana.jpg");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: right;
     }
 }
